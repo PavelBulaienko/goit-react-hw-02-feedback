@@ -1,3 +1,5 @@
+import propTypes from 'prop-types'
+
 const ExtraStats = ({
     countTotalFeedback,
     countPositiveFeedbackPercentage,
@@ -7,4 +9,9 @@ const ExtraStats = ({
         <p>Positive: {countPositiveFeedbackPercentage().procent}</p>
     </>
 )
+
+propTypes.propTypes = {
+    countTotalFeedback: propTypes.func,
+}
+
 export default ExtraStats
